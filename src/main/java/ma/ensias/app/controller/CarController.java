@@ -26,7 +26,7 @@ public class CarController {
 	public CarController(CarService carService) {
 
 		this.carService = carService;
-		
+
 	}
 
 	@GetMapping

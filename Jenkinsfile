@@ -18,7 +18,10 @@ pipeline {
                 }
         stage('Build Docker Image'){
                     steps{
-                        bat "docker build -t ayoub9le/electric_car_spring:latest ."
+                        withCredentials([usernamePassword(credentialsId: 'DOCKERHUB_CREDENTIALS', passwordVariable: 'DOCKERHUB_PASSWORD', usernameVariable: 'DOCKERHUB_USERNAME')]){
+                            bat "docker login -u $DOCKERHUB_USERNAME -p $DOCKERHUB_PASSWORD"
+                            bat "docker build -t ayoub9le/electric_car_spring:latest ."
+                        }
                     }
         }
         stage('Push Backend Docker Image to the Docker Hub'){
