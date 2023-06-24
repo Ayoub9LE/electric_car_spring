@@ -20,6 +20,12 @@ public class Location {
     private LocalDate endDate;
     private Double price;
     private Boolean isPaid;
+    public Location(LocalDate startDate, LocalDate endDate, double price, boolean isPaid) {
+        this.startDate = startDate;
+        this.endDate = endDate;
+        this.price = price;
+        this.isPaid = isPaid;
+    }
 
     // getters and setters
 
