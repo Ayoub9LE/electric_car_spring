@@ -18,7 +18,7 @@ pipeline {
                 }
         stage('Build Docker Image'){
                     steps{
-                        bat "docker build -t ayoub9le/electric_car_spring:latest"
+                        bat "docker build -t ayoub9le/electric_car_spring:latest ."
                     }
         }
         stage('Push Backend Docker Image to the Docker Hub'){
