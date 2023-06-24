@@ -59,4 +59,8 @@ public class LocationService {
         }
 
 
-}}
+}
+
+    public void updateLocation(Long id, LocalDate startDate, LocalDate endDate, Double price, Boolean paid) {
+    }
+}
