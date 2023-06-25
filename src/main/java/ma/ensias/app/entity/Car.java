@@ -69,6 +69,13 @@ public class Car {
 		this.renter = renter;
 	}
 
+	public Car(long l, String s, CarColor carColor) {
+		this.carId = l;
+		this.carBrand = s;
+		this.carColor= carColor;
+
+	}
+
 	public Long getCarId() {
 		return carId;
 	}

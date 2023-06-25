@@ -4,6 +4,7 @@ import ma.ensias.app.controller.CarController;
 import ma.ensias.app.entity.Car;
 import ma.ensias.app.enums.CarColor;
 import ma.ensias.app.service.CarService;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
